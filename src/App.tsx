@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './assets/image/fist_nobg.png';
+import logo from './assets/image/fist_nobg.svg';
 import bgVideo from './assets/video/anim.mp4';
 import './App.css';
 
