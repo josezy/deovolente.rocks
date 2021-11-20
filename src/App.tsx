@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './assets/image/fist_nobg.svg';
-import bgVideo from './assets/video/anim.mp4';
+import videoPoster from './assets/image/medusas.png';
+import bgVideo from './assets/video/medusas.m4v';
 import './App.css';
 
 function App() {
@@ -9,12 +10,20 @@ function App() {
       position: "relative",
       overflow: "hidden",
     }}>
-      <video autoPlay muted loop playsInline id="myVideo" style={{
-        position: "absolute",
-        width: "100%",
-        top: "50%",
-        transform: "translateY(-50%)",
-      }}>
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        id="myVideo"
+        style={{
+          position: "absolute",
+          width: "100%",
+          top: "50%",
+          transform: "translateY(-50%)",
+        }}
+        poster={videoPoster}
+      >
         <source src={bgVideo} type="video/mp4" />
       </video>
       <div className="App">
