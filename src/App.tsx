@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './assets/image/fist_nobg.svg';
 import videoPoster from './assets/image/medusas.png';
 import bgVideo from './assets/video/medusas.m4v';
 import './App.css';
 
 function App() {
+
+  useEffect(() => {
+    window.location.href = 'https://deovolente.hearnow.com'
+  }, [])
+
   return (
     <div style={{
       position: "relative",
